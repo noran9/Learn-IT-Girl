@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 django = "==2.1.5"
+requests = "*"
+geoip2 = "*"
 
 [requires]
 python_version = "3.7"

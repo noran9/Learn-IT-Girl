@@ -17,9 +17,10 @@
 	</div>
 	<div id="cloud" class="jumbotron text-center">
 		<div>
-			<h1 class="display-4">Current cloud cover for your location:</h1>
-			<h1 class="display-1">48%</h1>
-			<img src="{% static 'cloud.png' %}">
+			<h1 class="display-4">Current cloud cover for {{location_weather.city}}</h1>
+			<h1 class="display-1">{{location_weather.clouds}} %</h1>
+			<img src="http://openweathermap.org/img/w/{{location_weather.icon}}.png">
+			<p class="lead">{{location_weather.description}}</p>
 		</div>
 	</div>
 	<div class="jumbotron text-center">
