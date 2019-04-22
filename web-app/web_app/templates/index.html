@@ -23,7 +23,7 @@
 			<p class="lead">{{location_weather.description}}</p>
 		</div>
 	</div>
-	<div id="pr" class="pr jumbotron text-center">
+	<div class="pr jumbotron text-center">
 		<h1 id=title class="display-4">Nasa image of the day</h1><br>
 		<div>
 			<button class="btn btn-dark" id="update">Get picture of the day</button>
@@ -31,14 +31,14 @@
 		<img class="img-fluid" id="img"></img><br><br>
 		<p class="lead" id="desc"></p>
 	</div>
-	<div id="header" class="jumbotron text-center">
+	<div id="pr" class="jumbotron text-center">
 		<form name="form" method="POST">
 			{% csrf_token %}
 			<p class="lead text-light">Have you taken a high - quality astro image and want to know if it is a star or galaxy? Paste image url bellow and check out the prediction based on Microsoft Custom Vision model trained on 25 pictures of stars and galaxies. </h5></p>
 			<input type="text" class="form-control" name="url"><br>
-			<input class="btn btn-dark" type="submit" name="submit" value="Add Image URL">
+			<input class="btn btn-dark" type="submit" name="submit" value="Add Image URL"><br><br>
 		</form>
-		<h1>{{prediction}}</h1>
+		<h1 class="text-light">{{prediction}}</h1>
 	</div>
 </body>
 
