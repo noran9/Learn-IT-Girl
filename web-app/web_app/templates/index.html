@@ -17,10 +17,14 @@
 	</div>
 	<div id="cloud" class="jumbotron text-center">
 		<div>
-			<h1 class="display-4">Current cloud cover for {{location_weather.city}}</h1>
-			<h1 class="display-1">{{location_weather.clouds}} %</h1>
+			<h1 class="display-6">Current cloud cover for {{location_weather.city}}</h1>
+			<h1 class="display-3">{{location_weather.clouds}} %</h1>
 			<img src="http://openweathermap.org/img/w/{{location_weather.icon}}.png">
 			<p class="lead">{{location_weather.description}}</p>
+		</div><hr>
+		<div>
+			<h1 class="display-4">Cloud cover prediction for tonight:</h1>
+			<h1 class="display-1">{{hour_predict}} %</h1>
 		</div>
 	</div>
 	<div class="pr jumbotron text-center">

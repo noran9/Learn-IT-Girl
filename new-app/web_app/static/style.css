@@ -1,0 +1,21 @@
+#header {
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-image: url('bg.jpg');
+}
+
+#cloud{
+	background-image: url('cloud-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pr{
+	background-image: url('predict-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron{
+	border-radius: 0 !important;
+}

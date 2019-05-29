@@ -6,9 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==2.2.1"
-requests = "*"
-geoip2 = "*"
 
 [requires]
 python_version = "3.7"
